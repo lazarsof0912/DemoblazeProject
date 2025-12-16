@@ -62,5 +62,17 @@ public class StoreTests {
         alert.accept();
     }
 
+    // 5. Вход в аккаунт
+    @Test
+    void test04LogIn() {
+        $("#login2").click();
+        $("#loginusername").setValue("User");
+        $("#loginpassword").setValue("password");
+        $x("//button[.='Log in']").click();
+        Alert alert= switchTo().alert();
+        assertTrue(alert.getText().contains("Wrong password."));
+        alert.accept();
+    }
+
 
 }
