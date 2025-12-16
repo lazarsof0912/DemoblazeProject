@@ -35,10 +35,10 @@ public class StoreTests {
     void test02PlacingOrder() {
         $x("//a[.='Cart']").click();
         $x("//button[.='Place Order']").click();
-        $("#name").setValue("Ivan");
+        $("#name").setValue("Nikolay");
         $("#country").setValue("Russia");
-        $("#city").setValue("a");
-        $("#card").setValue("646465626");
+        $("#city").setValue("Moscow");
+        $("#card").setValue("1234567890123456");
         $("#month").setValue("12");
         $("#year").setValue("2025");
         $x("//button[.='Purchase']").click();
